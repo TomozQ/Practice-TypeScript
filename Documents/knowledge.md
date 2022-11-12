@@ -15,7 +15,7 @@ Gitリポジトリにおいては、node_modulesは.gitignoreに追加する。�
 ... npmに付属するプログラム。node_modules内にインストールされたコマンドラインプログラムを実行してくれるツール。<br>
 インストールしたtypescriptパッケージにはtscというコマンドが付属しており、これはTypeScriptコンパイラのコマンドラインプログラム
 
+新しいtsconfig.jsonを作成するコマンド
 ```
 npx tsc --init
 ```
-新しいtsconfig.jsonを作成するコマンド
