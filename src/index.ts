@@ -1,27 +1,27 @@
-const message: string = "Hello world";
+const width1 = 5;
+const width2 = 8;
+const height: number = 3;
+const area = (width1 + width2) * height / 2;
+console.log(area); // 19,5
+/**
+ * number型では整数と小数の区別がない
+ */
+console.log(3.5 * 2); // 7
 
-console.log(message);
+/**
+ * 数値リテラル
+ * リテラル ... 何らかの値を生み出すための式。生み出したい値に応じて幾つかの種類がある。
+ * 5, 8, 3.5 ... などとプログラム中に数を書くとそれは数値リテラルとなる。
+ */
 
-const greeting = 'Hello,';  // 文
-const target = 'World!';    // 文
-console.log(greeting + target);   // （greeting + target）-> 式 console.log(greeting + target) -> 式文
+const binary = 0b1010;      // 2進数リテラル
+const octal = 0o755;        // 8進数リテラル
+const hexadecimal = 0xff;   // 16進数リテラル
 
-// 変数宣言
-const greeting1 = 'Hello,';
-const target1 = 'World!';
-const text = greeting1 + target1;
-console.log(text)
+console.log(binary, octal, hexadecimal);  // 10 493 255
 
-// ↓
-
-// 複数の変数宣言を , でつなげることができる。
-const greeting2 = 'Hello,',
-      target2 = 'World!',
-      text1 = greeting2 + target2;
-console.log(text1);
-// が、メンテナンス性が落ちるため、一つずつconstを用いる方が良いし一般的。
-
-const greeting3: string = 'Hello, ';
-const target3: string = 'World!';
-// const target3: string = 123;  // src/index.ts:26:7 - error TS2322: Type 'number' is not assignable to type 'string'.
-console.log(greeting3 + target3);
+/**
+ * 2進数は先頭に0b
+ * 8進数は先頭に0o
+ * 16進数は先頭に0x
+ */
